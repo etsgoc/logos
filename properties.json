@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "updatedAt": "2026-10-28",
+  "version": 2,
+  "updatedAt": "2026-10-29",
   "mediaBase": "https://drive.google.com/thumbnail?sz=w1600&id=",
   "contact": {
     "phone": "+66 99 259 6525",
@@ -12,13 +12,15 @@
       "name": "Ever Prime Development Co., Ltd",
       "area": "Kamala, Phuket",
       "email": "info@everprimeresidences.com",
-      "phone": "+66 76 279 225"
+      "phone": "+66 76 279 225",
+      "blurb": "Developer of Ever Prime Residences in Karon."
     },
     {
       "id": "anocha",
       "name": "The Trees Residence by Anocha Co., Ltd",
       "area": "Bang Tao, Phuket",
-      "phone": "+66 99 259 6525"
+      "phone": "+66 99 259 6525",
+      "blurb": "Developer of The Trees Residence in Bang Tao and The Element in Kamala."
     }
   ],
   "projects": [
@@ -67,17 +69,26 @@
       "paymentPlan": "trees",
       "fees": "trees",
       "media": {
-        "cover": "DRIVE_FILE_ID",
+        "cover": "https://picsum.photos/seed/trees-zone-b-cover/1600/1000",
         "gallery": [
-          "DRIVE_FILE_ID"
+          "https://picsum.photos/seed/trees-zone-b-1/1600/1000",
+          "https://picsum.photos/seed/trees-zone-b-2/1600/1000",
+          "https://picsum.photos/seed/trees-zone-b-3/1600/1000",
+          "https://picsum.photos/seed/trees-zone-b-4/1600/1000",
+          "https://picsum.photos/seed/trees-zone-b-5/1600/1000"
         ],
-        "tour360": "DRIVE_FILE_ID_OR_URL"
+        "tour360": {
+          "type": "pano",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Laon_Cathedral_Interior_360x180%2C_Picardy%2C_France_-_Diliff.jpg/4096px-Laon_Cathedral_Interior_360x180%2C_Picardy%2C_France_-_Diliff.jpg"
+        }
       },
       "documents": {
         "brochure": "DRIVE_FILE_ID",
         "priceList": "DRIVE_FILE_ID"
       },
-      "status": "selling"
+      "status": "selling",
+      "tagline": "Hotel managed residences in Bang Tao",
+      "summary": "Low rise residences set in the Bang Tao hills, run like a five star hotel. Stay when you like and let the hotel rent the unit when you do not. 168 units across 10 buildings, handover in Q4 2028."
     },
     {
       "id": "ever-prime-karon",
@@ -108,11 +119,22 @@
       "paymentPlan": "everprime",
       "fees": "everprime",
       "media": {
-        "cover": "DRIVE_FILE_ID",
-        "gallery": [],
-        "tour360": null
+        "cover": "https://picsum.photos/seed/ever-prime-karon-cover/1600/1000",
+        "gallery": [
+          "https://picsum.photos/seed/ever-prime-karon-1/1600/1000",
+          "https://picsum.photos/seed/ever-prime-karon-2/1600/1000",
+          "https://picsum.photos/seed/ever-prime-karon-3/1600/1000",
+          "https://picsum.photos/seed/ever-prime-karon-4/1600/1000",
+          "https://picsum.photos/seed/ever-prime-karon-5/1600/1000"
+        ],
+        "tour360": {
+          "type": "pano",
+          "url": "https://pannellum.org/images/alma.jpg"
+        }
       },
-      "status": "selling"
+      "status": "selling",
+      "tagline": "Furnished one bedrooms in Karon",
+      "summary": "One bedroom residences of 51.36 m² in Karon, sold as leasehold or freehold. Every unit comes with a complimentary furniture package worth 350,000 THB."
     },
     {
       "id": "the-element",
@@ -136,11 +158,22 @@
       "paymentPlan": "everprime",
       "fees": "everprime",
       "media": {
-        "cover": "DRIVE_FILE_ID",
-        "gallery": [],
-        "tour360": null
+        "cover": "https://picsum.photos/seed/the-element-cover/1600/1000",
+        "gallery": [
+          "https://picsum.photos/seed/the-element-1/1600/1000",
+          "https://picsum.photos/seed/the-element-2/1600/1000",
+          "https://picsum.photos/seed/the-element-3/1600/1000",
+          "https://picsum.photos/seed/the-element-4/1600/1000",
+          "https://picsum.photos/seed/the-element-5/1600/1000"
+        ],
+        "tour360": {
+          "type": "pano",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Laon_Cathedral_Interior_360x180%2C_Picardy%2C_France_-_Diliff.jpg/4096px-Laon_Cathedral_Interior_360x180%2C_Picardy%2C_France_-_Diliff.jpg"
+        }
       },
-      "status": "selling"
+      "status": "selling",
+      "tagline": "Modern residences in Kamala",
+      "summary": "A calm, modern project in Kamala by Anocha. The Timeless Ivory interior collection uses beige, champagne and soft white tones."
     }
   ],
   "paymentPlans": {
@@ -2077,24 +2110,291 @@
   ],
   "services": [
     {
+      "id": "airport-transfer",
+      "categoryId": "transport",
+      "title": "Airport transfer",
+      "blurb": "Meet and greet at Phuket airport, then a private car to your door.",
+      "image": "https://picsum.photos/seed/svc-airport-transfer/1200/800",
+      "currency": "THB",
+      "needsDate": true,
+      "needsPeople": false,
+      "requestOnly": false,
+      "partnerId": "local-partners",
+      "commissionPct": 15,
+      "unit": "per trip",
+      "options": [
+        {
+          "id": "sedan",
+          "label": "Sedan, up to 3 people",
+          "price": 900
+        },
+        {
+          "id": "suv",
+          "label": "SUV, up to 5 people",
+          "price": 1300
+        },
+        {
+          "id": "van",
+          "label": "Van, up to 9 people",
+          "price": 1800
+        }
+      ]
+    },
+    {
+      "id": "car-hire-driver",
+      "categoryId": "transport",
+      "title": "Car with driver",
+      "blurb": "A car and driver for the day, around Phuket.",
+      "image": "https://picsum.photos/seed/svc-car-hire-driver/1200/800",
+      "currency": "THB",
+      "needsDate": true,
+      "needsPeople": true,
+      "requestOnly": false,
+      "partnerId": "local-partners",
+      "commissionPct": 15,
+      "priceFrom": 3200,
+      "unit": "per day"
+    },
+    {
+      "id": "flight-help",
+      "categoryId": "flights",
+      "title": "Flight booking help",
+      "blurb": "Tell us where you fly from and when. We find options and book for you.",
+      "image": "https://picsum.photos/seed/svc-flight-help/1200/800",
+      "currency": "THB",
+      "needsDate": true,
+      "needsPeople": false,
+      "requestOnly": true,
+      "partnerId": "local-partners",
+      "commissionPct": 15
+    },
+    {
+      "id": "visa-longstay",
+      "categoryId": "visa",
+      "title": "Long stay visa support",
+      "blurb": "Guidance and paperwork for the visa that fits your stay.",
+      "image": "https://picsum.photos/seed/svc-visa-longstay/1200/800",
+      "currency": "THB",
+      "needsDate": false,
+      "needsPeople": false,
+      "requestOnly": true,
+      "partnerId": "local-partners",
+      "commissionPct": 15
+    },
+    {
+      "id": "visa-90day",
+      "categoryId": "visa",
+      "title": "90 day report",
+      "blurb": "We file your 90 day address report for you.",
+      "image": "https://picsum.photos/seed/svc-visa-90day/1200/800",
+      "currency": "THB",
+      "needsDate": false,
+      "needsPeople": false,
+      "requestOnly": false,
+      "partnerId": "local-partners",
+      "commissionPct": 15,
+      "priceFrom": 800,
+      "unit": "per report"
+    },
+    {
+      "id": "lease-registration",
+      "categoryId": "legal",
+      "title": "Lease registration",
+      "blurb": "Support through registering your lease at the Land Office.",
+      "image": "https://picsum.photos/seed/svc-lease-registration/1200/800",
+      "currency": "THB",
+      "needsDate": false,
+      "needsPeople": false,
+      "requestOnly": true,
+      "partnerId": "legal-partner",
+      "commissionPct": 15
+    },
+    {
+      "id": "tax-bank",
+      "categoryId": "legal",
+      "title": "Tax ID and bank account",
+      "blurb": "Help getting a Thai tax ID and opening a bank account.",
+      "image": "https://picsum.photos/seed/svc-tax-bank/1200/800",
+      "currency": "THB",
+      "needsDate": false,
+      "needsPeople": false,
+      "requestOnly": true,
+      "partnerId": "legal-partner",
+      "commissionPct": 15
+    },
+    {
+      "id": "rent-out",
+      "categoryId": "rentals",
+      "title": "Rent out my unit",
+      "blurb": "Hotel style management and booking for your unit when you are away.",
+      "image": "https://picsum.photos/seed/svc-rent-out/1200/800",
+      "currency": "THB",
+      "needsDate": false,
+      "needsPeople": false,
+      "requestOnly": true,
+      "partnerId": "local-partners",
+      "commissionPct": 20
+    },
+    {
+      "id": "find-rental",
+      "categoryId": "rentals",
+      "title": "Find a rental",
+      "blurb": "Monthly and long term rentals across Phuket, matched to your budget.",
+      "image": "https://picsum.photos/seed/svc-find-rental/1200/800",
+      "currency": "THB",
+      "needsDate": true,
+      "needsPeople": false,
+      "requestOnly": true,
+      "partnerId": "local-partners",
+      "commissionPct": 15
+    },
+    {
+      "id": "cleaning",
+      "categoryId": "furnishing",
+      "title": "Deep cleaning",
+      "blurb": "Move in or move out cleaning by a trained team.",
+      "image": "https://picsum.photos/seed/svc-cleaning/1200/800",
+      "currency": "THB",
+      "needsDate": true,
+      "needsPeople": false,
+      "requestOnly": false,
+      "partnerId": "local-partners",
+      "commissionPct": 15,
+      "priceFrom": 2500,
+      "unit": "per visit"
+    },
+    {
+      "id": "utilities",
+      "categoryId": "furnishing",
+      "title": "Utilities and internet set-up",
+      "blurb": "Electricity, water and fibre internet connected and in your name.",
+      "image": "https://picsum.photos/seed/svc-utilities/1200/800",
+      "currency": "THB",
+      "needsDate": false,
+      "needsPeople": false,
+      "requestOnly": false,
+      "partnerId": "local-partners",
+      "commissionPct": 15,
+      "priceFrom": 1500,
+      "unit": "one time"
+    },
+    {
+      "id": "concierge-daily",
+      "categoryId": "concierge",
+      "title": "Concierge request",
+      "blurb": "Restaurant bookings, groceries, a spa day, anything you need arranged.",
+      "image": "https://picsum.photos/seed/svc-concierge-daily/1200/800",
+      "currency": "THB",
+      "needsDate": true,
+      "needsPeople": false,
+      "requestOnly": true,
+      "partnerId": "local-partners",
+      "commissionPct": 15
+    },
+    {
+      "id": "island-tour",
+      "categoryId": "experiences",
+      "title": "Island tour",
+      "blurb": "Phi Phi and the bays by speedboat, lunch and snorkel gear included.",
+      "image": "https://picsum.photos/seed/svc-island-tour/1200/800",
+      "currency": "THB",
+      "needsDate": true,
+      "needsPeople": true,
+      "requestOnly": false,
+      "partnerId": "local-partners",
+      "commissionPct": 15,
+      "unit": "per person",
+      "options": [
+        {
+          "id": "shared",
+          "label": "Shared boat, per person",
+          "price": 2200
+        },
+        {
+          "id": "private",
+          "label": "Private boat, per person",
+          "price": 4800
+        }
+      ]
+    },
+    {
+      "id": "golf",
+      "categoryId": "experiences",
+      "title": "Golf day",
+      "blurb": "Tee time, transfer and caddie at a Phuket course.",
+      "image": "https://picsum.photos/seed/svc-golf/1200/800",
+      "currency": "THB",
+      "needsDate": true,
+      "needsPeople": true,
+      "requestOnly": false,
+      "partnerId": "local-partners",
+      "commissionPct": 15,
+      "priceFrom": 3900,
+      "unit": "per person"
+    }
+  ],
+  "features": {
+    "services": true,
+    "onlinePayments": false
+  },
+  "serviceCategories": [
+    {
       "id": "transport",
       "title": "Transport",
-      "blurb": "Airport transfers, private cars and chauffeur hire."
+      "blurb": "Airport transfers, private cars and vans.",
+      "icon": "car"
     },
     {
       "id": "flights",
       "title": "Flights",
-      "blurb": "Flights to Phuket and back."
+      "blurb": "Flight search and booking help.",
+      "icon": "plane"
+    },
+    {
+      "id": "visa",
+      "title": "Visa and residency",
+      "blurb": "Long stay visas, extensions and 90 day reports.",
+      "icon": "passport"
+    },
+    {
+      "id": "legal",
+      "title": "Legal and banking",
+      "blurb": "Lease registration, tax ID and bank accounts.",
+      "icon": "scale"
+    },
+    {
+      "id": "rentals",
+      "title": "Rentals",
+      "blurb": "Rent out your unit or find a place to rent.",
+      "icon": "key"
+    },
+    {
+      "id": "furnishing",
+      "title": "Furnishing and care",
+      "blurb": "Furniture, cleaning, utilities and repairs.",
+      "icon": "sofa"
     },
     {
       "id": "concierge",
       "title": "Concierge",
-      "blurb": "Dining, activities and local help."
+      "blurb": "Dining, groceries, wellness and daily help.",
+      "icon": "bell"
     },
     {
       "id": "experiences",
       "title": "Experiences",
-      "blurb": "Island tours, golf and wellness."
+      "blurb": "Island tours, golf, boats and more.",
+      "icon": "sparkles"
+    }
+  ],
+  "partners": [
+    {
+      "id": "local-partners",
+      "name": "Local partners"
+    },
+    {
+      "id": "legal-partner",
+      "name": "Legal partner"
     }
   ]
 }
